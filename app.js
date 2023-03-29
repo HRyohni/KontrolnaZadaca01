@@ -71,7 +71,6 @@ const peopleYouShouldKnow = {
 }
 
 
-console.log(peopleYouShouldKnow.toString());
 function naj (people)
 {  
     console.log (people["Bjarne"]);  // znam da ne vrijedi
