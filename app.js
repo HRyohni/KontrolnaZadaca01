@@ -70,7 +70,7 @@ const peopleYouShouldKnow = {
     Erich: "Gamma"
 }
 
-peopleYouShouldKnow.map(e => console.log(e));
+//peopleYouShouldKnow.map(e => console.log(e));
 
 //INPUT: peopleYouShouldKnow
 //OUTPUT: "Stroustrup"
@@ -84,11 +84,18 @@ peopleYouShouldKnow.map(e => console.log(e));
 //Napisi funkciju u obliku arrow functiona koja pretvara mala slova danih inputa u velika slova
 //INPUT: ["aa", "b1", "", null, "AAA"]
 //OUTPUT: ["AA","B1", "", null, "AAA"]
-function mala (array)
+function mala (polje)
 {
-    console.log(array.toUpperCase());
+    temp = [];
+    polje.forEach(e => {
+       try
+        temp.push(e.toUpperCase());
+       
+    });
+    console.log(temp);
 }
-mala
+
+mala(["aa", "b1", "", null, "AAA"]);
 //6 (4 BODA)
 //Napisi funkciju koja vraca sve drzave koji su imali manju temperaturu od one iz ulaznog parametra
 const someEvents = [
