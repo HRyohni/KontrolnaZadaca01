@@ -7,22 +7,60 @@ function neparni ()
             console.log(i);   
     }
 }
-neparni()
+//neparni()
 
 //2 (3 BODA)
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u godisnje u doba. Za neispravan unos ispisi prikladnu poruku.
 //INPUT: 1; OUTPUT: "Jesen";
 //INPUT: 3; OUTPUT: "Ljeto"; 
+function sezona (unos)
+{
+    switch (unos) {
+        case 1:
+            console.log("Ljeto");
+        break;
+            case 2:
+            console.log("jesen");
+            break;
+            case 3:
+            console.log("zima");
+            break;
+            case 4:
+            console.log("proljece");
+            break;
+          
+    
+        default:
+            console.log("nesipravni unos");
+            break;
+    }
+}
 
-
+// sezona(321);
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao"
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 39)
+function obrni(rijec)
+{
+    rijec =rijec.split('');
+    
+    temp ="";
+  for (let e = rijec.length -1; 0 <= e; e--) {
+   
+  temp += rijec[e];
+  }
+
+  console.log(temp , temp.length);
+}
+
+
+//obrni("Pisanje zadataka nije jednostavan posao");
+
 
 //4 (4 BODA)
-//Napisi funkciju koja odreduje najdulju vrijednostu u danom objektu
+//Napisi funkciju koja odreduje najdulju vrijednost  u danom objektu
 const peopleYouShouldKnow = {
     Donald: "Knuth",
     Bjarne: "Stroustrup",
@@ -31,6 +69,8 @@ const peopleYouShouldKnow = {
     Martin: "Fowler",
     Erich: "Gamma"
 }
+
+
 //INPUT: somePeople
 //OUTPUT: "Stroustrup"
 
