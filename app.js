@@ -71,13 +71,14 @@ const peopleYouShouldKnow = {
 }
 
 
-
+console.log(peopleYouShouldKnow.toString());
 function naj (people)
-{   
-    console.log (people["Bjarne"]); 
+{  
+    console.log (people["Bjarne"]);  // znam da ne vrijedi
+    
 }
  
-naj(peopleYouShouldKnow);
+//naj(peopleYouShouldKnow);
 //INPUT: peopleYouShouldKnow
 //OUTPUT: "Stroustrup"
 
