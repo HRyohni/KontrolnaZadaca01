@@ -1,2 +1,2 @@
 
-console.log("kurac")
+console.log("test")
