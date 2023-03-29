@@ -70,8 +70,14 @@ const peopleYouShouldKnow = {
     Erich: "Gamma"
 }
 
-//peopleYouShouldKnow.map(e => console.log(e));
 
+
+function naj (people)
+{   
+    console.log (people["Bjarne"]); 
+}
+ 
+naj(peopleYouShouldKnow);
 //INPUT: peopleYouShouldKnow
 //OUTPUT: "Stroustrup"
 
@@ -88,14 +94,19 @@ function mala (polje)
 {
     temp = [];
     polje.forEach(e => {
-       try
+       try {
         temp.push(e.toUpperCase());
+       } 
+       catch (error) {
+        temp.push(e);
+       }
+        
        
     });
     console.log(temp);
 }
 
-mala(["aa", "b1", "", null, "AAA"]);
+//mala(["aa", "b1", "", null, "AAA"]);
 //6 (4 BODA)
 //Napisi funkciju koja vraca sve drzave koji su imali manju temperaturu od one iz ulaznog parametra
 const someEvents = [
